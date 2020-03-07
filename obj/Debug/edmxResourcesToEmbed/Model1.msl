@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DEMO_KD_1ModelStoreContainer" CdmEntityContainer="DEMO_KD_1Entities">
+    <EntitySetMapping Name="AWS_PRAC_WEKTOR">
+      <EntityTypeMapping TypeName="DEMO_KD_1Model.AWS_PRAC_WEKTOR">
+        <MappingFragment StoreEntitySet="AWS_PRAC_WEKTOR">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="holl_days" ColumnName="holl_days" />
+          <ScalarProperty Name="id_prac" ColumnName="id_prac" />
+          <ScalarProperty Name="ill_days" ColumnName="ill_days" />
+          <ScalarProperty Name="work_days" ColumnName="work_days" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="month" ColumnName="month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AWS_PRAC_TO_VECTOR" FunctionName="DEMO_KD_1Model.Store.AWS_PRAC_TO_VECTOR" />
+  </EntityContainerMapping>
+</Mapping>

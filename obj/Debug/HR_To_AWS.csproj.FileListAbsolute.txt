@@ -1,0 +1,14 @@
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\HR_To_AWS.exe.config
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\HR_To_AWS.exe
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\HR_To_AWS.pdb
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\EntityFramework.dll
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\EntityFramework.xml
+C:\Users\Kickdrew\source\repos\HR_To_AWS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.csprojAssemblyReference.cache
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.Form1.resources
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.Properties.Resources.resources
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.csproj.GenerateResource.cache
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.csproj.CopyComplete
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.exe
+C:\Users\Kickdrew\source\repos\HR_To_AWS\obj\Debug\HR_To_AWS.pdb

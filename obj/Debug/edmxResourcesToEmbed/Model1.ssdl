@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DEMO_KD_1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AWS_PRAC_WEKTOR">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="status" Type="int" />
+    <Property Name="holl_days" Type="int" />
+    <Property Name="id_prac" Type="int" Nullable="false" />
+    <Property Name="ill_days" Type="int" />
+    <Property Name="work_days" Type="int" />
+    <Property Name="year" Type="int" Nullable="false" />
+    <Property Name="month" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="AWS_PRAC_TO_VECTOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="KD" />
+  <EntityContainer Name="DEMO_KD_1ModelStoreContainer">
+    <EntitySet Name="AWS_PRAC_WEKTOR" EntityType="Self.AWS_PRAC_WEKTOR" Schema="KD" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

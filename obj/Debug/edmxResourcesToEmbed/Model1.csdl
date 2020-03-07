@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DEMO_KD_1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AWS_PRAC_WEKTOR">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="holl_days" Type="Int32" />
+    <Property Name="id_prac" Type="Int32" Nullable="false" />
+    <Property Name="ill_days" Type="Int32" />
+    <Property Name="work_days" Type="Int32" />
+    <Property Name="year" Type="Int32" Nullable="false" />
+    <Property Name="month" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DEMO_KD_1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AWS_PRAC_WEKTOR" EntityType="Self.AWS_PRAC_WEKTOR" />
+    <FunctionImport Name="AWS_PRAC_TO_VECTOR" />
+  </EntityContainer>
+</Schema>
