@@ -30,6 +30,7 @@
         {
             this.RunBTN = new System.Windows.Forms.Button();
             this.ReadBTN = new System.Windows.Forms.Button();
+            this.ToCSVBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RunBTN
@@ -52,11 +53,22 @@
             this.ReadBTN.UseVisualStyleBackColor = true;
             this.ReadBTN.Click += new System.EventHandler(this.ReadBTN_Click);
             // 
+            // ToCSVBTN
+            // 
+            this.ToCSVBTN.Location = new System.Drawing.Point(110, 167);
+            this.ToCSVBTN.Name = "ToCSVBTN";
+            this.ToCSVBTN.Size = new System.Drawing.Size(75, 23);
+            this.ToCSVBTN.TabIndex = 2;
+            this.ToCSVBTN.Text = "To CSV";
+            this.ToCSVBTN.UseVisualStyleBackColor = true;
+            this.ToCSVBTN.Click += new System.EventHandler(this.ToCSVBTN_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ToCSVBTN);
             this.Controls.Add(this.ReadBTN);
             this.Controls.Add(this.RunBTN);
             this.Name = "Form1";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button RunBTN;
         private System.Windows.Forms.Button ReadBTN;
+        private System.Windows.Forms.Button ToCSVBTN;
     }
 }
 
