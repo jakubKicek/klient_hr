@@ -65,7 +65,24 @@ namespace HR_To_AWS
                 csv_value.Append("\n");
             }
 
-            string path = @"c:\MyCSV.csv";
+            Stream myStream;
+            SaveFileDialog saveFileDialog_csv = new SaveFileDialog();
+
+            saveFileDialog_csv.Filter = "CSV files (*.csv)|*.csv";
+            saveFileDialog_csv.RestoreDirectory = true;
+
+            if (saveFileDialog_csv.ShowDialog() == DialogResult.OK)
+            {
+                if ((myStream = saveFileDialog_csv.OpenFile()) != null)
+                {
+                    // Code to write the stream goes here.
+                    byte[] info = new UTF8Encoding(true).GetBytes(csv_value.ToString());
+                    myStream.Write(info, 0, info.Length);
+                    myStream.Close();
+                }
+            }
+
+            /*string path = @"\MyCSV.csv";
             try
             {
                 using (FileStream fs = File.Create(path))
@@ -77,7 +94,7 @@ namespace HR_To_AWS
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }
+            }*/
             //MessageBox.Show(csv_value.ToString());
         }
     }
